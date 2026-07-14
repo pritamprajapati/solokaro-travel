@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solo Karo Travel | Explore India</title>
+  <style>
+    :root {
+      --bg-dark: #0f0f1a;
+      --neon-pink: #ff006e;
+      --neon-purple: #6c00f9;
+      --neon-blue: #00f7ff;
+      --text-light: #f5f5f5;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-light);
+      margin: 0;
+      padding: 0;
+    }
+    .top-nav {
+      position: sticky;
+      top: 0;
+      background: var(--neon-purple);
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink));
+      box-shadow: 0 0 20px var(--neon-pink);
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 20px 0;
+      text-shadow: 0 0 10px var(--neon-blue);
+    }
+    header p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #ddd;
+    }
+    .owner-card {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(255,255,255,0.05);
+      margin: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px var(--neon-purple);
+    }
+    .section-title {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1.8em;
+      color: var(--neon-blue);
+      text-shadow: 0 0 8px var(--neon-pink);
+    }
+    .package-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .package-card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+    .package-card:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 0 20px var(--neon-pink);
+    }
+    .package-pic {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px var(--neon-blue);
+    }
+    .package-meta {
+      margin-top: 10px;
+    }
+    .pack-price {
+      font-weight: bold;
+      margin-right: 10px;
+      color: var(--neon-blue);
+    }
+    .book-btn {
+      background: var(--neon-pink);
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+    .book-btn:hover {
+      background: var(--neon-blue);
+      box-shadow: 0 0 10px var(--neon-blue);
+    }
+    /* WhatsApp Floating Button */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      box-shadow: 0 0 15px #25D366;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .whatsapp-btn:hover {
+      background: #128C7E;
+      box-shadow: 0 0 20px #25D366;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <div class="top-nav">
+    <div class="logo">TRAVEL SOLO ★</div>
+    <div id="google_translate_element"></div>
+  </div>
+
+  <!-- Hero Banner -->
+  <header>
+    <div class="badge">🚀 PAN-INDIA EXPEDITIONS</div>
+    <h1>SOLO KARO TRAVEL ⚡</h1>
+    <p>Explore All 28 States Of India With Pritam Prajapati</p>
+  </header>
+
+  <!-- Founder Card -->
+  <div class="owner-card">
+    <div class="badge" style="background:#6c00f9; padding:5px 10px; border-radius:6px;">👑 FOUNDER & CEO</div>
+    <h2>Meet Pritam Prajapati</h2>
+    <p>Welcome to India's biggest solo backpacking network. Check out the best budget packages below and hit WhatsApp to confirm your trip instantly!</p>
+  </div>
+
+  <!-- Packages -->
+  <h3 class="section-title">🗺️ Explore All 28 States of India</h3>
+  <div class="package-grid">
+
+    <!-- Andhra Pradesh -->
+<div class="package-card"><div class="package-pic">🕌</div><h4>Andhra Pradesh</h4><p>Capital: Amaravati</p><div class="package-meta"><span class="pack-price">₹5,499</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Arunachal Pradesh -->
+<div class="package-card"><div class="package-pic">🏔️</div><h4>Arunachal Pradesh</h4><p>Capital: Itanagar</p><div class="package-meta"><span class="pack-price">₹8,999</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Assam -->
+<div class="package-card"><div class="package-pic">🦏</div><h4>Assam</h4><p>Capital: Dispur</p><div class="package-meta"><span class="pack-price">₹5,999</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Bihar -->
+<div class="package-card"><div class="package-pic">🙏</div><h4>Bihar</h4><p>Capital: Patna</p><div class="package-meta"><span class="pack-price">₹3,999</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Chhattisgarh -->
+<div class="package-card"><div class="package-pic">🌊</div><h4>Chhattisgarh</h4><p>Capital: Raipur</p><div class="package-meta"><span class="pack-price">₹4,499</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Goa -->
+<div class="package-card"><div class="package-pic">🏖️</div><h4>Goa</h4><p>Capital: Panaji</p><div class="package-meta"><span class="pack-price">₹4,999</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Gujarat -->
+<div class="package-card"><div class="package-pic">🎪</div><h4>Gujarat</h4><p>Capital: Gandhinagar</p><div class="package-meta"><span class="pack-price">₹6,499</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Haryana -->
+<div class="package-card"><div class="package-pic">🚜</div><h4>Haryana</h4><p>Capital: Chandigarh</p><div class="package-meta"><span class="pack-price">₹3,499</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Himachal Pradesh -->
+<div class="package-card"><div class="package-pic">🏔️</div><h4>Himachal Pradesh</h4><p>Capital: Shimla (Summer) / Dharamshala (Winter)</p><div class="package-meta"><span class="pack-price">₹4,999</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Jharkhand -->
+<div class="package-card"><div class="package-pic">🌳</div><h4>Jharkhand</h4><p>Capital: Ranchi</p><div class="package-meta"><span class="pack-price">₹3,999</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Karnataka -->
+<div class="package-card"><div class="package-pic">🏰</div><h4>Karnataka</h4><p>Capital: Bengaluru</p><div class="package-meta"><span class="pack-price">₹5,499</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Kerala -->
+<div class="package-card"><div class="package-pic">🌴</div><h4>Kerala</h4><p>Capital: Thiruvananthapuram</p><div class="package-meta"><span class="pack-price">₹5,999</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Madhya Pradesh -->
+<div class="package-card"><div class="package-pic">🐅</div><h4>Madhya Pradesh</h4><p>Capital: Bhopal</p><div class="package-meta"><span class="pack-price">₹4,999</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Maharashtra -->
+<div class="package-card"><div class="package-pic">🎡</div><h4>Maharashtra</h4><p>Capital: Mumbai (Summer) / Nagpur (Winter)</p><div class="package-meta"><span class="pack-price">₹4,499</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Manipur -->
+<div class="package-card"><div class="package-pic">🏞️</div><h4>Manipur</h4><p>Capital: Imphal</p><div class="package-meta"><span class="pack-price">₹5,499</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Meghalaya -->
+<div class="package-card"><div class="package-pic">🌧️</div><h4>Meghalaya</h4><p>Capital: Shillong</p><div class="package-meta"><span class="pack-price">₹5,499</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Mizoram -->
+<div class="package-card"><div class="package-pic">🌄</div><h4>Mizoram</h4><p>Capital: Aizawl</p><div class="package-meta"><span class="pack-price">₹6,499</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Nagaland -->
+<div class="package-card"><div class="package-pic">🔥</div><h4>Nagaland</h4><p>Capital: Kohima</p><div class="package-meta"><span class="pack-price">₹7,499</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Odisha -->
+<div class="package-card"><div class="package-pic">🕉️</div><h4>Odisha</h4><p>Capital: Bhubaneswar</p><div class="package-meta"><span class="pack-price">₹4,999</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Punjab -->
+<div class="package-card"><div class="package-pic">🌾</div><h4>Punjab</h4><p>Capital: Chandigarh</p><div class="package-meta"><span class="pack-price">₹3,999</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Rajasthan -->
+<div class="package-card"><div class="package-pic">🏜️</div><h4>Rajasthan</h4><p>Capital: Jaipur</p><div class="package-meta"><span class="pack-price">₹6,999</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+<!-- Sikkim -->
+<div class="package-card"><div class="package-pic">⛰️</div><h4>Sikkim</h4><p>Capital: Gangtok</p><div class="package-meta"><span class="pack-price">₹7,499</span><a href="https://wa.me/9958685304" class="book-btn">Book Now</a></div></div>
+
+
+  <div class="review-card">
+    <p>"Solo Karo Travel made my Goa trip unforgettable! Neon vibes + budget friendly 🔥"</p>
+    <h5>- Rahul, Delhi</h5>
+  </div>
+
+  <div class="review-card">
+    <p>"Best backpacking experience in Himachal. Smooth booking via WhatsApp 💬"</p>
+    <h5>- Sneha, Mumbai</h5>
+  </div>
+
+  <div class="review-card">
+    <p>"Explored Assam tea gardens with Pritam’s guidance. Highly recommended 👑"</p>
+    <h5>- Arjun, Guwahati</h5>
+  </div>
+
+  <div class="review-card">
+    <p>"Kerala backwaters trip was magical. Loved the neon styled website too ⚡"</p>
+    <h5>- Priya, Kochi</h5>
+  </div>
+
+</div>
+<!-- Reviews Section -->
+  
+<!-- Footer -->
+<footer>
+  <div class="footer-logo">⚡ SOLO KARO TRAVEL ⚡</div>
+  <p>📞 Contact Us: <a href="https://wa.me/9958685304" style="color:#25D366; text-decoration:none;">9958685304</a></p>
+  <p>© All Rights Reserved by <span style="color:var(--neon-pink); font-weight:bold;">Pritam Prajapati</span></p>
+</footer>
